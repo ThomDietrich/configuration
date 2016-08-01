@@ -1,0 +1,2 @@
+# configuration
+my system initialization
