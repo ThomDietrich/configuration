@@ -6,6 +6,7 @@ apt update && apt install -y git
 git config --global user.name "Thomas Dietrich"
 git config --global user.email Thomas.Dietrich@tu-ilmenau.de
 git config --global color.ui auto
+git config --global color.diff.old "red strike" # new with git 2.10
 git config --global core.whitespace trailing-space,space-before-tab
 git config --global diff.renames copies
 git config --global diff.mnemonicprefix true
@@ -13,6 +14,7 @@ git config --global diff.compactionHeuristic true
 git config --global merge.stat true
 git config --global commit.gpgsign true
 git config --global user.signingkey A20301F1
+git config --global log.showSignature true # new with git 2.10
 
 # git config --global --unset user.signingkey
 # git config --global --edit
