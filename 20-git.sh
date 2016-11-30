@@ -10,7 +10,7 @@ git config --global color.diff.old "red strike" # new with git 2.10
 git config --global core.whitespace trailing-space,space-before-tab
 git config --global diff.renames copies
 git config --global diff.mnemonicprefix true
-git config --global diff.compactionHeuristic true
+git config --global diff.indentHeuristic true
 git config --global merge.stat true
 git config --global commit.gpgsign true
 git config --global user.signingkey A20301F1
