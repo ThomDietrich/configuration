@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 
-PLUGINS="git common-aliases compleat colored-man-pages history-substring-search rand-quote zsh-navigation-tools"
+PLUGINS="git common-aliases compleat colored-man-pages history-substring-search rand-quote zsh-navigation-tools zsh-autosuggestions docker docker-compose docker-machine zsh-completions pipenv zsh-syntax-highlighting k"
 
 #first commit, not tested
 apt update && apt install -y zsh
  
 # https://github.com/robbyrussell/oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sed -i 's/robbyrussell/blinks/g' ~/.zshrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sed -i 's/robbyrussell/powerlevel10k\/powerlevel10k/g' ~/.zshrc
+#sed -i 's/robbyrussell/blinks/g' ~/.zshrc
 #sed -i 's/robbyrussell/aussiegeek/g' ~/.zshrc
 #sed -i 's/robbyrussell/candy/g' ~/.zshrc
 #sed -i 's/robbyrussell/nanotech/g' ~/.zshrc
