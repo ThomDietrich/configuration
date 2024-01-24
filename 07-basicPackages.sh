@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #first commit, not tested
-PACKAGES="mc vfu screen vim git curl wget  localepurge htop ntp deborphan unzip python3 python3-pip" 
+PACKAGES="mc vfu screen vim git curl wget fzf localepurge htop ntp deborphan unzip python3 python3-pip" 
 PACKAGES2="apticron glances nmap smbclient cifs-utils sshfs fail2ban etckeeper logwatch"
 
 apt update && apt upgrade
